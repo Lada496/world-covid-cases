@@ -1,9 +1,5 @@
 $(function () {
-  let arrayAreas = [];
-  let areasObject = {};
   let areas = {};
-
-  let jsonAreas;
   const url = "https://covid-api.mmediagroup.fr/v1/cases/";
   $.getJSON(url)
     .done(function (data) {
@@ -17,10 +13,7 @@ $(function () {
               content: `<span style="font-weight:bold;">${data[index].All.country}</span><br /> Cases: ${data[index].All.confirmed}<br /> Deaths: ${data[index].All.deaths}`,
             },
           };
-          // areasObject[countryabbreviation] = countryObject;
           areas[countryabbreviation] = countryObject;
-          // console.log(areas[countryabbreviation]);
-          // console.log(countryObject);
         }
       });
       $(".mapcontainer").mapael({
@@ -95,15 +88,6 @@ $(function () {
           },
         },
         areas,
-        // areas: {
-        //   AF: {
-        //     value: "18631",
-        //     href: "#",
-        //     tooltip: {
-        //       content: `<span style="font-weight:bold;">Andorra</span><br /> Cases: 18631<br /> Deaths: 133`,
-        //     },
-        //   },
-        // },
       });
     })
     .fail(function () {
