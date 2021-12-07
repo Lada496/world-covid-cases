@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.3.min.js"
+      integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"
+      integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.2.0/js/jquery.mapael.min.js"
+      integrity="sha512-+iXNzFArGbqxdmbClb1f6MKIiZASR7H8ep6rS1ZFn2I7tRX400ApvS0nsG8/v1+F7RoGU2shMDTl/gZ5lZF1iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/map/world_countries.js" charset="utf-8"></script>
+
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>World Covid-19 Cases</title>
+  </head>
+  <body>
+    <h1 id="title">World Covid Cases Map</h1>
+    <div class="mapcontainer">
+      <div class="map">
+        <span class="loading">Data has not arrived yet... </span>
+      </div>
+      <div class="areaLegend"></div>
+    </div>
+    <footer>
+      Powered by
+      <a href="https://github.com/neveldo/jQuery-Mapael">jQuery-Mapael</a>
+    </footer>
+  </body>
+</html>
