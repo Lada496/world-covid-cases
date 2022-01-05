@@ -4,6 +4,10 @@
 
 A map to show countries Covid-19 cases.
 
+## Screenshot
+<img width="1208" alt="Screen Shot 2022-01-04 at 22 03 24" src="https://user-images.githubusercontent.com/67321065/148168442-728db596-2250-4494-8958-9fc24c097865.png">
+
+
 ## Tools and Libraries
 
 - jQuery
